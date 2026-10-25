@@ -1,5 +1,8 @@
-bin/
 prev.json
+bin/
 __pycache__/
 *.pyc
 test_deep*.py
+set_secrets.sh
+run_secrets.sh
+create_repo.sh
