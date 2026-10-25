@@ -1,0 +1,68 @@
+name: ikuuu-watch
+
+on:
+  workflow_dispatch:
+  schedule:
+    # 每天 UTC 23:00 = 北京时间 07:00（你账号原生 schedule 不太触发，建议再挂 cron-job.org 外腿）
+    - cron: "0 23 * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ikuuu-watch
+  cancel-in-progress: false
+
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: 依赖
+        run: pip install pyyaml
+
+      - name: 备份上次状态（用于对比）
+        run: if [ -f status.json ]; then cp status.json prev.json; fi
+
+      - name: 下载 mihomo（真连测试用，失败不影响探活）
+        continue-on-error: true
+        run: |
+          mkdir -p bin
+          curl -sL --retry 3 -o bin/mihomo.gz \
+            https://github.com/MetaCubeX/mihomo/releases/download/v1.19.11/mihomo-linux-amd64-v1.19.11.gz
+          gunzip -f bin/mihomo.gz
+          chmod +x bin/mihomo
+          ./bin/mihomo -v
+
+      - name: 探活
+        env:
+          IKU_SUBS: ${{ secrets.IKU_SUBS }}
+          DEEP: "1"
+          MIHOMO: ./bin/mihomo
+        run: python3 probe.py
+
+      - name: 推送（仅状态变化时）
+        env:
+          TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
+          TG_CHAT_ID: ${{ secrets.TG_CHAT_ID }}
+          TG_THREAD_ID: ${{ secrets.TG_THREAD_ID }}
+        run: python3 notify.py
+
+      - name: 保存状态
+        run: |
+          rm -f prev.json
+          git config user.name "ikuuu-watch"
+          git config user.email "actions@users.noreply.github.com"
+          git add status.json
+          if git diff --cached --quiet; then
+            echo "状态无变化，不提交"
+          else
+            git commit -m "status: $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+            git push
+          fi

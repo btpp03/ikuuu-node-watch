@@ -1,0 +1,5 @@
+bin/
+prev.json
+__pycache__/
+*.pyc
+test_deep*.py

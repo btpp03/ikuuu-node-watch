@@ -1,0 +1,86 @@
+{
+ "ts": 1792940356,
+ "time": "2026-10-25 14:59:16 UTC",
+ "nodes": [
+  {
+   "name": "🇯🇵 免费-日本1-Ver.7",
+   "type": "vmess",
+   "server": "bcyph1q-g03.jp01-nn-vm0.entry.fr0528.art",
+   "port": 21583,
+   "tls": true,
+   "ip": "57.183.22.16",
+   "tcp": false,
+   "why": "timeout",
+   "alive": false
+  },
+  {
+   "name": "🇯🇵 免费-日本2-Ver.8",
+   "type": "vmess",
+   "server": "576p19g-g03.jp02-e3-vm0.entry.fr0528.art",
+   "port": 11775,
+   "tls": false,
+   "ip": "13.230.30.154",
+   "tcp": false,
+   "why": "timeout",
+   "alive": false
+  },
+  {
+   "name": "🇯🇵 免费-日本3-Ver.7",
+   "type": "vmess",
+   "server": "5bya1dg-g03.jp03-j7-vm0.entry.fr0528.art",
+   "port": 21583,
+   "tls": true,
+   "ip": "18.179.62.152",
+   "tcp": false,
+   "why": "timeout",
+   "alive": false
+  },
+  {
+   "name": "🇯🇵 免费-日本4-Ver.8",
+   "type": "vmess",
+   "server": "5ccp1dg-g03.jp04-1d-vm0.entry.fr0528.art",
+   "port": 446,
+   "tls": false,
+   "ip": "13.230.44.85",
+   "tcp": false,
+   "why": "timeout",
+   "alive": false
+  },
+  {
+   "name": "🇯🇵 免费-日本5-Ver.9",
+   "type": "vmess",
+   "server": "5ccpt1q-g03.jp05-h6-vm0.entry.fr0528.art",
+   "port": 46484,
+   "tls": false,
+   "ip": "35.77.25.154",
+   "tcp": false,
+   "why": "timeout",
+   "alive": false
+  },
+  {
+   "name": "🇯🇵 免费-日本6-Ver.8",
+   "type": "vmess",
+   "server": "y26a81g-g03.jp06-jz-vm0.entry.fr0528.art",
+   "port": 28785,
+   "tls": true,
+   "ip": "35.79.21.238",
+   "tcp": false,
+   "why": "timeout",
+   "alive": false
+  },
+  {
+   "name": "🇯🇵 免费-日本7-Ver.2",
+   "type": "vmess",
+   "server": "b7yghdq-g03.jp07-sh-vm0.entry.fr0528.art",
+   "port": 28785,
+   "tls": false,
+   "ip": "18.181.238.103",
+   "tcp": false,
+   "why": "timeout",
+   "alive": false
+  }
+ ],
+ "subErrors": [
+  "NSZztIi5LncO: startswith first arg must be bytes or a tuple of bytes, not str"
+ ]
+}
