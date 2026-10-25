@@ -1,4 +1,5 @@
 *.pyc
+*.sh
 *_run.sh
 __pycache__/
 bin/
