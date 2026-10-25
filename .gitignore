@@ -6,3 +6,5 @@ test_deep*.py
 set_secrets.sh
 run_secrets.sh
 create_repo.sh
+create_repo.sh
+clean_push.sh
