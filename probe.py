@@ -214,15 +214,15 @@ def main():
             errors.append("%s: %s" % (u.split("/link/")[-1][:12], e))
             print("订阅拉取失败 %s: %s" % (u.split("/link/")[-1][:12], e), file=sys.stderr)
 
+    probe_all(nodes)
+    # 按解析后的 IP+端口去重（两种订阅格式的入口域名随机、后端其实是同一台机器）
     seen, uniq = set(), []
     for n in nodes:
-        k = (n["server"], n["port"])
+        k = (n.get("ip") or n["server"], n["port"])
         if k in seen:
             continue
         seen.add(k)
         uniq.append(n)
-
-    probe_all(uniq)
     if os.environ.get("DEEP", "1") == "1":
         deep_test(uniq)
     for n in uniq:
@@ -236,6 +236,13 @@ def main():
 
     status = {"ts": int(time.time()), "time": time.strftime("%Y-%m-%d %H:%M:%S UTC", time.gmtime()),
               "nodes": safe, "subErrors": errors}
+    # 把上次推送记录带过来（notify.py 会更新它）
+    try:
+        prev = json.load(open("prev.json"))
+        if isinstance(prev.get("notify"), dict):
+            status["notify"] = prev["notify"]
+    except Exception:
+        pass
     json.dump(status, open("status.json", "w"), ensure_ascii=False, indent=1)
 
     up = [n for n in uniq if n.get("alive")]

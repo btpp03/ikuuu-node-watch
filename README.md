@@ -54,8 +54,11 @@ https://api.github.com/repos/btpp03/ikuuu-node-watch/actions/workflows/watch.yml
 
 - 首次运行：发一条「已上线」基线
 - 状态不变（可用节点集合相同）：**静默**
-- 有节点恢复 / 掉线：发一条，带延迟、出口 IP、归属地
+- 有节点恢复 / 掉线：立即发一条，带延迟、出口 IP、归属地
+- **连续 30 天没有任何变化**：发一条月度提醒（还是全挂也一样会说一声）
 - 订阅拉取失败（token 失效等）：消息里带 ⚠️
+
+「上次推送时间」记在 `status.json` 的 `notify` 字段里，跟着仓库走，所以 runner 无状态也能算准天数。想改周期就设 secret `MONTHLY_DAYS`（默认 30），或手动跑时加 env。
 
 ## 文件
 
