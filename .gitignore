@@ -8,3 +8,6 @@ run_secrets.sh
 create_repo.sh
 create_repo.sh
 clean_push.sh
+dispatch.sh
+watch_run.sh
+check_run.sh
