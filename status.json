@@ -1,27 +1,25 @@
 {
- "ts": 1794018648,
- "time": "2026-11-07 02:30:48 UTC",
+ "ts": 1794103218,
+ "time": "2026-11-08 02:00:18 UTC",
  "nodes": [
   {
    "name": "🇯🇵 免费-日本1-Ver.7",
    "type": "vmess",
-   "server": "576gt1g-g03.jp01-nn-vm0.entry.fr0528.art",
+   "server": "b7cg89q-g03.jp01-nn-vm0.entry.fr0528.art",
    "port": 21583,
    "tls": true,
-   "ip": "13.196.168.163",
-   "tcp": true,
-   "why": "open",
-   "delay": null,
-   "exitIp": null,
+   "ip": "35.74.69.22",
+   "tcp": false,
+   "why": "timeout",
    "alive": false
   },
   {
    "name": "🇯🇵 免费-日本2-Ver.8",
    "type": "vmess",
-   "server": "y2yp11q-g03.jp02-e3-vm0.entry.fr0528.art",
+   "server": "5cyph14-g03.jp02-e3-vm0.entry.fr0528.art",
    "port": 11775,
    "tls": false,
-   "ip": "35.77.34.214",
+   "ip": "35.74.64.135",
    "tcp": false,
    "why": "timeout",
    "alive": false
@@ -29,25 +27,21 @@
   {
    "name": "🇯🇵 免费-日本3-Ver.7",
    "type": "vmess",
-   "server": "571p89q-g03.jp03-j7-vm0.entry.fr0528.art",
+   "server": "yb6g19g-g03.jp03-j7-vm0.entry.fr0528.art",
    "port": 21583,
    "tls": true,
    "ip": "43.206.95.251",
-   "tcp": true,
-   "why": "open",
-   "delay": 466,
-   "exitIp": "43.206.95.251",
-   "exitGeo": "Japan/Tokyo",
-   "exitIsp": "Amazon.com, Inc.",
-   "alive": true
+   "tcp": false,
+   "why": "timeout",
+   "alive": false
   },
   {
    "name": "🇯🇵 免费-日本4-Ver.8",
    "type": "vmess",
-   "server": "y26g11g-g03.jp04-1d-vm0.entry.fr0528.art",
+   "server": "b71g19q-g03.jp04-1d-vm0.entry.fr0528.art",
    "port": 446,
    "tls": false,
-   "ip": "13.230.44.24",
+   "ip": "35.76.126.191",
    "tcp": false,
    "why": "timeout",
    "alive": false
@@ -55,10 +49,10 @@
   {
    "name": "🇯🇵 免费-日本5-Ver.9",
    "type": "vmess",
-   "server": "b76phd4-g03.jp05-h6-vm0.entry.fr0528.art",
+   "server": "y2catdq-g03.jp05-h6-vm0.entry.fr0528.art",
    "port": 46484,
    "tls": false,
-   "ip": "43.207.62.157",
+   "ip": "13.196.203.69",
    "tcp": false,
    "why": "timeout",
    "alive": false
@@ -66,10 +60,10 @@
   {
    "name": "🇯🇵 免费-日本6-Ver.8",
    "type": "vmess",
-   "server": "5b1at94-g03.jp06-jz-vm0.entry.fr0528.art",
+   "server": "y21pt1g-g03.jp06-jz-vm0.entry.fr0528.art",
    "port": 28785,
    "tls": true,
-   "ip": "13.196.183.29",
+   "ip": "43.207.70.3",
    "tcp": false,
    "why": "timeout",
    "alive": false
@@ -77,10 +71,10 @@
   {
    "name": "🇯🇵 免费-日本7-Ver.2",
    "type": "vmess",
-   "server": "bb6a81g-g03.jp07-sh-vm0.entry.fr0528.art",
+   "server": "5cyp89q-g03.jp07-sh-vm0.entry.fr0528.art",
    "port": 28785,
    "tls": false,
-   "ip": "3.113.18.134",
+   "ip": "35.75.11.29",
    "tcp": false,
    "why": "timeout",
    "alive": false
@@ -88,9 +82,7 @@
  ],
  "subErrors": [],
  "notify": {
-  "sig": [
-   "🇯🇵 免费-日本3-Ver.7|571p89q-g03.jp03-j7-vm0.entry.fr0528.art:21583"
-  ],
-  "ts": 1794018648
+  "sig": [],
+  "ts": 1794103218
  }
 }
