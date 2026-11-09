@@ -1,14 +1,14 @@
 {
- "ts": 1794103218,
- "time": "2026-11-08 02:00:18 UTC",
+ "ts": 1794190821,
+ "time": "2026-11-09 02:20:21 UTC",
  "nodes": [
   {
    "name": "🇯🇵 免费-日本1-Ver.7",
    "type": "vmess",
-   "server": "b7cg89q-g03.jp01-nn-vm0.entry.fr0528.art",
+   "server": "yb1gtdg-g03.jp01-nn-vm0.entry.fr0528.art",
    "port": 21583,
    "tls": true,
-   "ip": "35.74.69.22",
+   "ip": "35.74.251.16",
    "tcp": false,
    "why": "timeout",
    "alive": false
@@ -16,10 +16,10 @@
   {
    "name": "🇯🇵 免费-日本2-Ver.8",
    "type": "vmess",
-   "server": "5cyph14-g03.jp02-e3-vm0.entry.fr0528.art",
+   "server": "y71at1q-g03.jp02-e3-vm0.entry.fr0528.art",
    "port": 11775,
    "tls": false,
-   "ip": "35.74.64.135",
+   "ip": "18.181.110.0",
    "tcp": false,
    "why": "timeout",
    "alive": false
@@ -27,21 +27,25 @@
   {
    "name": "🇯🇵 免费-日本3-Ver.7",
    "type": "vmess",
-   "server": "yb6g19g-g03.jp03-j7-vm0.entry.fr0528.art",
+   "server": "bb1a89g-g03.jp03-j7-vm0.entry.fr0528.art",
    "port": 21583,
    "tls": true,
-   "ip": "43.206.95.251",
-   "tcp": false,
-   "why": "timeout",
-   "alive": false
+   "ip": "3.114.209.219",
+   "tcp": true,
+   "why": "open",
+   "delay": 404,
+   "exitIp": "3.114.209.219",
+   "exitGeo": "Japan/Tokyo",
+   "exitIsp": "Amazon Technologies Inc.",
+   "alive": true
   },
   {
    "name": "🇯🇵 免费-日本4-Ver.8",
    "type": "vmess",
-   "server": "b71g19q-g03.jp04-1d-vm0.entry.fr0528.art",
+   "server": "b21g81g-g03.jp04-1d-vm0.entry.fr0528.art",
    "port": 446,
    "tls": false,
-   "ip": "35.76.126.191",
+   "ip": "35.77.20.96",
    "tcp": false,
    "why": "timeout",
    "alive": false
@@ -49,21 +53,25 @@
   {
    "name": "🇯🇵 免费-日本5-Ver.9",
    "type": "vmess",
-   "server": "y2catdq-g03.jp05-h6-vm0.entry.fr0528.art",
+   "server": "bc1g89q-g03.jp05-h6-vm0.entry.fr0528.art",
    "port": 46484,
    "tls": false,
-   "ip": "13.196.203.69",
-   "tcp": false,
-   "why": "timeout",
-   "alive": false
+   "ip": "3.113.113.128",
+   "tcp": true,
+   "why": "open",
+   "delay": 270,
+   "exitIp": "3.113.113.128",
+   "exitGeo": "Japan/Tokyo",
+   "exitIsp": "Amazon Technologies Inc.",
+   "alive": true
   },
   {
    "name": "🇯🇵 免费-日本6-Ver.8",
    "type": "vmess",
-   "server": "y21pt1g-g03.jp06-jz-vm0.entry.fr0528.art",
+   "server": "5b6a89q-g03.jp06-jz-vm0.entry.fr0528.art",
    "port": 28785,
    "tls": true,
-   "ip": "43.207.70.3",
+   "ip": "18.183.104.135",
    "tcp": false,
    "why": "timeout",
    "alive": false
@@ -71,10 +79,10 @@
   {
    "name": "🇯🇵 免费-日本7-Ver.2",
    "type": "vmess",
-   "server": "5cyp89q-g03.jp07-sh-vm0.entry.fr0528.art",
+   "server": "bb1a89g-g03.jp07-sh-vm0.entry.fr0528.art",
    "port": 28785,
    "tls": false,
-   "ip": "35.75.11.29",
+   "ip": "35.77.12.136",
    "tcp": false,
    "why": "timeout",
    "alive": false
@@ -82,7 +90,10 @@
  ],
  "subErrors": [],
  "notify": {
-  "sig": [],
-  "ts": 1794103218
+  "sig": [
+   "🇯🇵 免费-日本3-Ver.7|bb1a89g-g03.jp03-j7-vm0.entry.fr0528.art:21583",
+   "🇯🇵 免费-日本5-Ver.9|bc1g89q-g03.jp05-h6-vm0.entry.fr0528.art:46484"
+  ],
+  "ts": 1794190821
  }
 }
