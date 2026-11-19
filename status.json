@@ -1,11 +1,11 @@
 {
- "ts": 1794974409,
- "time": "2026-11-18 04:00:09 UTC",
+ "ts": 1795060625,
+ "time": "2026-11-19 03:57:05 UTC",
  "nodes": [
   {
    "name": "🇯🇵 免费-日本1-Ver.7",
    "type": "vmess",
-   "server": "5c1g11g-g03.jp01-nn-vm0.entry.fr0528.art",
+   "server": "y7ca8dg-g03.jp01-nn-vm0.entry.fr0528.art",
    "port": 21583,
    "tls": true,
    "ip": "57.183.13.173",
@@ -16,7 +16,7 @@
   {
    "name": "🇯🇵 免费-日本2-Ver.8",
    "type": "vmess",
-   "server": "bb6gh14-g03.jp02-e3-vm0.entry.fr0528.art",
+   "server": "yc1g19g-g03.jp02-e3-vm0.entry.fr0528.art",
    "port": 11775,
    "tls": false,
    "ip": "3.115.116.14",
@@ -27,7 +27,7 @@
   {
    "name": "🇯🇵 免费-日本3-Ver.7",
    "type": "vmess",
-   "server": "y71p814-g03.jp03-j7-vm0.entry.fr0528.art",
+   "server": "bbygtd4-g03.jp03-j7-vm0.entry.fr0528.art",
    "port": 21583,
    "tls": true,
    "ip": "13.230.32.73",
@@ -38,10 +38,10 @@
   {
    "name": "🇯🇵 免费-日本4-Ver.8",
    "type": "vmess",
-   "server": "bc1gt14-g03.jp04-1d-vm0.entry.fr0528.art",
+   "server": "5bcgh14-g03.jp04-1d-vm0.entry.fr0528.art",
    "port": 446,
    "tls": false,
-   "ip": "57.183.22.46",
+   "ip": "13.196.175.168",
    "tcp": false,
    "why": "timeout",
    "alive": false
@@ -49,10 +49,10 @@
   {
    "name": "🇯🇵 免费-日本5-Ver.9",
    "type": "vmess",
-   "server": "y2yg8d4-g03.jp05-h6-vm0.entry.fr0528.art",
+   "server": "bbca89q-g03.jp05-h6-vm0.entry.fr0528.art",
    "port": 46484,
    "tls": false,
-   "ip": "18.183.106.118",
+   "ip": "3.112.66.153",
    "tcp": false,
    "why": "timeout",
    "alive": false
@@ -60,10 +60,10 @@
   {
    "name": "🇯🇵 免费-日本6-Ver.8",
    "type": "vmess",
-   "server": "bc6gh9q-g03.jp06-jz-vm0.entry.fr0528.art",
+   "server": "bccgh1q-g03.jp06-jz-vm0.entry.fr0528.art",
    "port": 28785,
    "tls": true,
-   "ip": "18.178.203.252",
+   "ip": "13.192.205.209",
    "tcp": false,
    "why": "timeout",
    "alive": false
@@ -71,7 +71,7 @@
   {
    "name": "🇯🇵 免费-日本7-Ver.2",
    "type": "vmess",
-   "server": "bbyat94-g03.jp07-sh-vm0.entry.fr0528.art",
+   "server": "b21p1dg-g03.jp07-sh-vm0.entry.fr0528.art",
    "port": 28785,
    "tls": false,
    "ip": "18.180.61.108",
