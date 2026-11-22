@@ -1,11 +1,11 @@
 {
- "ts": 1795232612,
- "time": "2026-11-21 03:43:32 UTC",
+ "ts": 1795315655,
+ "time": "2026-11-22 02:47:35 UTC",
  "nodes": [
   {
-   "name": "🇯🇵 免费-日本1-Ver.7",
+   "name": "免费-日本1-Ver.7",
    "type": "vmess",
-   "server": "521ahd4-g03.jp01-nn-vm0.entry.fr0528.art",
+   "server": "bbyah9q-g03.jp01-nn-vm0.entry.fr0528.art",
    "port": 21583,
    "tls": true,
    "ip": "13.230.44.9",
@@ -14,9 +14,9 @@
    "alive": false
   },
   {
-   "name": "🇯🇵 免费-日本2-Ver.8",
+   "name": "免费-日本2-Ver.8",
    "type": "vmess",
-   "server": "5c6atdg-g03.jp02-e3-vm0.entry.fr0528.art",
+   "server": "526pt94-g03.jp02-e3-vm0.entry.fr0528.art",
    "port": 11775,
    "tls": false,
    "ip": "3.115.116.14",
@@ -25,9 +25,9 @@
    "alive": false
   },
   {
-   "name": "🇯🇵 免费-日本3-Ver.7",
+   "name": "免费-日本3-Ver.7",
    "type": "vmess",
-   "server": "ybygtdg-g03.jp03-j7-vm0.entry.fr0528.art",
+   "server": "ybca11g-g03.jp03-j7-vm0.entry.fr0528.art",
    "port": 21583,
    "tls": true,
    "ip": "13.230.32.73",
@@ -36,9 +36,9 @@
    "alive": false
   },
   {
-   "name": "🇯🇵 免费-日本4-Ver.8",
+   "name": "免费-日本4-Ver.8",
    "type": "vmess",
-   "server": "bc1ph9g-g03.jp04-1d-vm0.entry.fr0528.art",
+   "server": "5ccg81q-g03.jp04-1d-vm0.entry.fr0528.art",
    "port": 446,
    "tls": false,
    "ip": "13.196.175.168",
@@ -47,9 +47,9 @@
    "alive": false
   },
   {
-   "name": "🇯🇵 免费-日本5-Ver.9",
+   "name": "免费-日本5-Ver.9",
    "type": "vmess",
-   "server": "y2cgh1g-g03.jp05-h6-vm0.entry.fr0528.art",
+   "server": "yb1gt14-g03.jp05-h6-vm0.entry.fr0528.art",
    "port": 46484,
    "tls": false,
    "ip": "18.181.237.162",
@@ -58,9 +58,9 @@
    "alive": false
   },
   {
-   "name": "🇯🇵 免费-日本6-Ver.8",
+   "name": "免费-日本6-Ver.8",
    "type": "vmess",
-   "server": "526at94-g03.jp06-jz-vm0.entry.fr0528.art",
+   "server": "b71gh1q-g03.jp06-jz-vm0.entry.fr0528.art",
    "port": 28785,
    "tls": true,
    "ip": "13.158.70.28",
@@ -69,9 +69,9 @@
    "alive": false
   },
   {
-   "name": "🇯🇵 免费-日本7-Ver.2",
+   "name": "免费-日本7-Ver.2",
    "type": "vmess",
-   "server": "5bcp814-g03.jp07-sh-vm0.entry.fr0528.art",
+   "server": "y71ph1q-g03.jp07-sh-vm0.entry.fr0528.art",
    "port": 28785,
    "tls": false,
    "ip": "3.113.246.157",
@@ -80,7 +80,9 @@
    "alive": false
   }
  ],
- "subErrors": [],
+ "subErrors": [
+  "NSZztIi5LncO: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1018)>"
+ ],
  "notify": {
   "sig": [],
   "ts": 1794891376
